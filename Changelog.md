@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.0.0...v1.1.0) (2023-09-28)
+
+
+### 🚀 New Features
+
+* make repository public ([2e74ad2](https://github.com/AtomiCloud/sulfoxide.bromine/commit/2e74ad265400e2997d29246aac059dceeba0970e))
+
 ## 1.0.0 (2023-09-28)
 
 
