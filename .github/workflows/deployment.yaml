@@ -1,0 +1,42 @@
+name: CI-CD
+
+on:
+  push:
+
+env:
+  # Helm
+  HELM_DOMAIN: ghcr.io
+  HELM_USER: ${{ github.actor }}
+  HELM_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  precommit:
+    name: Pre-commit Check
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Run pre-commit
+        run: nix develop .#ci -c ./scripts/ci/pre-commit.sh
+
+  release:
+    name: Semantic Release
+    needs:
+      - precommit
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          DOMAIN: ${{ env.HELM_DOMAIN }}
+
+          DOCKER_PASSWORD: ${{ env.HELM_PASSWORD }}
+          DOCKER_USER: ${{ env.HELM_USER }}
+          GITHUB_REPO_REF: ${{ github.repository }}
+
+        run: nix develop .#releaser -c scripts/ci/release.sh

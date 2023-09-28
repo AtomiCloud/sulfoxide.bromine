@@ -1,0 +1,8 @@
+serviceTree:
+  landscape: pichu
+  cluster: opal
+
+storeName: doppler
+
+rootSecret:
+  ref: SULFOXIDE_BROMINE

@@ -1,0 +1,24 @@
+# -- AtomiCloud Service Tree. See [ServiceTree](https://atomicloud.larksuite.com/wiki/OkfJwTXGFiMJkrk6W3RuwRrZs64?theme=DARK&contentTheme=DARK#MHw5d76uDo2tBLx86cduFQMRsBb)
+serviceTree:
+  platform: sulfoxide
+  service: bromine
+  module: store
+  layer: "1"
+
+# -- Name of the store to be created to contain all of doppler's secrets
+storeName: doppler
+
+# -- The configuration to use external secret to obtain the root doppler token for secret of secret pattern
+rootSecret:
+  # -- Name of kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict)
+  name: doppler-secret
+  # -- Secret Key of the kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict)
+  key: DOPPLER_TOKEN
+  # -- Reference from the secret of secrets vault for the proxy token (need to configure)
+  ref:
+  # -- Store Configuration for the secret of secrets vault for the proxy token)
+  store:
+    # -- `ClusterSecretStore` or `SecretStore`. Defaults to `ClusterSecretStore`
+    kind: ClusterSecretStore
+    # -- Name of the secret store to be created to contain the proxy token
+    name: doppler

@@ -1,0 +1,35 @@
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" (printf "%s-%s" .Values.rootSecret.name "doppler") "root" .) }}
+  labels: {{- include "sulfoxide-bromine.labels" . | nindent 4 }}
+  annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-5"
+spec:
+  secretStoreRef:
+    kind: {{ .Values.rootSecret.store.kind }}
+    name: {{ .Values.rootSecret.store.name }}
+  target:
+    name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" .Values.rootSecret.name "root" .) }}
+  data:
+    - secretKey: {{ .Values.rootSecret.key }}
+      remoteRef:
+        key: {{ .Values.rootSecret.ref }}
+---
+apiVersion: external-secrets.io/v1beta1
+kind: SecretStore
+metadata:
+  name: "{{ .Values.storeName }}"
+  labels: {{- include "sulfoxide-bromine.labels" . | nindent 4 }}
+  annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-4"
+spec:
+  provider:
+    doppler:
+      auth:
+        secretRef:
+          dopplerToken:
+            name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" .Values.rootSecret.name "root" .) }}
+            key: {{ .Values.rootSecret.key }}
