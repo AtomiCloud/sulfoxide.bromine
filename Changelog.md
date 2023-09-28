@@ -1,3 +1,10 @@
+## 1.0.0 (2023-09-28)
+
+
+### 🚀 New Features
+
+* initial commit ([201ec37](https://github.com/AtomiCloud/sulfoxide.bromine/commit/201ec37837cd0628774f5a1d51ca6c49a5507513))
+
 ## 1.0.0 (2023-09-27)
 
 
