@@ -2,5 +2,5 @@ apiVersion: v2
 name: sulfoxide-bromine
 description: Helm chart to deploy SecretStore that use secret of secrets pattern to get project specific secrets
 type: application
-version: 1.1.0
+version: 1.1.1
 appVersion: "0.1.0"

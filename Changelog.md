@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.1.0...v1.1.1) (2023-09-30)
+
+
+### 🐛 Bug Fixes
+
+* change cluster render to cluster template ([9b75ec0](https://github.com/AtomiCloud/sulfoxide.bromine/commit/9b75ec0036922c4b296aa69ead1fadc707419746))
+
 ## [1.1.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.0.0...v1.1.0) (2023-09-28)
 
 
