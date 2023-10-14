@@ -1,0 +1,8 @@
+serviceTree:
+  landscape: entei
+  cluster: opal
+
+storeName: doppler-iodine
+
+rootSecret:
+  ref: SULFOXIDE_IODINE
