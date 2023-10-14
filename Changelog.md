@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.1.1...v1.2.0) (2023-10-14)
+
+
+### 🚀 New Features
+
+* entei opal ([b855bb5](https://github.com/AtomiCloud/sulfoxide.bromine/commit/b855bb5966167c6f54bb6988e66e21851b328bfe))
+
 ## [1.1.1](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.1.0...v1.1.1) (2023-09-30)
 
 
