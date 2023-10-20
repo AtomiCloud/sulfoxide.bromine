@@ -62,7 +62,7 @@ helm.sh/chart: {{ include "sulfoxide-bromine.chart" . }}
 "atomi.cloud/{{ $k }}": "{{ $v }}"
 {{- end }}
 {{- range $k, $v := .Values.annotations }}
-"{{ $k }}": "{{ $v }}
+"{{ $k }}": "{{ $v }}"
 {{- end }}
 {{- end }}
 

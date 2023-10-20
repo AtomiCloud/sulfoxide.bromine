@@ -6,7 +6,9 @@ serviceTree:
   layer: "1"
 
 # -- Additional annotations to add to the store and external secret
-annotations: {}
+annotations:
+  helm.sh/hook: pre-install,pre-upgrade
+  helm.sh/weight: "-5"
 
 # -- Name of the store to be created to contain all of doppler's secrets
 storeName: doppler
