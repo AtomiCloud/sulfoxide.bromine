@@ -8,6 +8,7 @@ Helm chart to deploy SecretStore that use secret of secrets pattern to get proje
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| annotations | object | `{}` | Additional annotations to add to the store and external secret |
 | rootSecret | object | `{"key":"DOPPLER_TOKEN","name":"doppler-secret","ref":null,"store":{"kind":"ClusterSecretStore","name":"doppler"}}` | The configuration to use external secret to obtain the root doppler token for secret of secret pattern |
 | rootSecret.key | string | `"DOPPLER_TOKEN"` | Secret Key of the kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict) |
 | rootSecret.name | string | `"doppler-secret"` | Name of kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict) |

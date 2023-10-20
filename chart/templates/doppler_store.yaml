@@ -4,8 +4,6 @@ metadata:
   name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" (printf "%s-%s" .Values.rootSecret.name "doppler") "root" .) }}
   labels: {{- include "sulfoxide-bromine.labels" . | nindent 4 }}
   annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
-    "helm.sh/hook": pre-install,pre-upgrade
-    "helm.sh/hook-weight": "-5"
 spec:
   secretStoreRef:
     kind: {{ .Values.rootSecret.store.kind }}
@@ -23,8 +21,6 @@ metadata:
   name: "{{ .Values.storeName }}"
   labels: {{- include "sulfoxide-bromine.labels" . | nindent 4 }}
   annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
-    "helm.sh/hook": pre-install,pre-upgrade
-    "helm.sh/hook-weight": "-4"
 spec:
   provider:
     doppler:

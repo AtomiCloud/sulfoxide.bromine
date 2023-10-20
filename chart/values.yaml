@@ -5,6 +5,9 @@ serviceTree:
   module: store
   layer: "1"
 
+# -- Additional annotations to add to the store and external secret
+annotations: {}
+
 # -- Name of the store to be created to contain all of doppler's secrets
 storeName: doppler
 
