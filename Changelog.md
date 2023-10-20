@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.0...v1.2.1) (2023-10-20)
+
+
+### 🐛 Bug Fixes
+
+* allow higher level charts to decide argo or helm hooks ([f0d674e](https://github.com/AtomiCloud/sulfoxide.bromine/commit/f0d674e09dfce51816876b2b96ac4e7cbb22a953))
+
 ## [1.2.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.1.1...v1.2.0) (2023-10-14)
 
 
