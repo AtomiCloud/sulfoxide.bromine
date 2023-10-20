@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.2...v1.2.3) (2023-10-20)
+
+
+### 🐛 Bug Fixes
+
+* remove default annotations ([f0fa132](https://github.com/AtomiCloud/sulfoxide.bromine/commit/f0fa13228985be89578598ac56130d241dce5242))
+
 ## [1.2.2](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.1...v1.2.2) (2023-10-20)
 
 
