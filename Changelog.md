@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.3...v1.3.0) (2023-11-18)
+
+
+### 🚀 New Features
+
+* ruby values ([df97657](https://github.com/AtomiCloud/sulfoxide.bromine/commit/df976571c33d2d3b2eb6991c9d16a0d437a6c29c))
+
 ## [1.2.3](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.2...v1.2.3) (2023-10-20)
 
 
