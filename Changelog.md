@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.3.0...v1.4.0) (2024-02-08)
+
+
+### 📦 Upstreams Changes
+
+* flake ([f8a27ee](https://github.com/AtomiCloud/sulfoxide.bromine/commit/f8a27ee179fc9ff377e93ec8767d19275e6e1398))
+
+
+### 🚀 New Features
+
+* onyx cluster ([2dab976](https://github.com/AtomiCloud/sulfoxide.bromine/commit/2dab976d91cf7fde236091767435792f7365324e))
+
 ## [1.3.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.2.3...v1.3.0) (2023-11-18)
 
 
