@@ -1,3 +1,15 @@
+## [1.5.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.4.0...v1.5.0) (2024-08-10)
+
+
+### 🚀 New Features
+
+* switch to infisical ([47de476](https://github.com/AtomiCloud/sulfoxide.bromine/commit/47de476bdb07fb61d9906276592652be88207d3e))
+
+
+### 🐛 Bug Fixes
+
+* pin releaser to use npm ([8eb0691](https://github.com/AtomiCloud/sulfoxide.bromine/commit/8eb0691d7d0fac70ec634994e95ecb6ebf47e689))
+
 ## [1.4.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.3.0...v1.4.0) (2024-02-08)
 
 
