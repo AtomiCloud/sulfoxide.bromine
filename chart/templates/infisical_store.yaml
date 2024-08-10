@@ -1,7 +1,7 @@
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
-  name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" (printf "%s-%s" .Values.rootSecret.name "doppler") "root" .) }}
+  name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" (printf "%s-%s" .Values.rootSecret.name "infisical") "root" .) }}
   labels: {{- include "sulfoxide-bromine.labels" . | nindent 4 }}
   annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
 spec:
