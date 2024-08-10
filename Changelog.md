@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.5.0...v1.5.1) (2024-08-10)
+
+
+### 🐛 Bug Fixes
+
+* change external secret name to infisical instead of doppler ([c8c41e3](https://github.com/AtomiCloud/sulfoxide.bromine/commit/c8c41e3a72c463ad43961368e4709a9db1078cd1))
+
 ## [1.5.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.4.0...v1.5.0) (2024-08-10)
 
 
