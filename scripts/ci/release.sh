@@ -3,4 +3,4 @@
 set -eou pipefail
 
 rm .git/hooks/* || true
-sg release -i npm
+sg release

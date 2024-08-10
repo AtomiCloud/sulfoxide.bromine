@@ -1,1 +1,1 @@
-Installed Gotrade's Ingres Controller
+Installed AtomiCloud's Secret Agent

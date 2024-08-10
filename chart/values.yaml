@@ -8,20 +8,30 @@ serviceTree:
 # -- Additional annotations to add to the store and external secret
 annotations: {}
 
-# -- Name of the store to be created to contain all of doppler's secrets
-storeName: doppler
+# -- Name of the store to be created to contain all of infisical's secrets
+storeName: infisical
 
-# -- The configuration to use external secret to obtain the root doppler token for secret of secret pattern
+# -- The configuration to use external secret to obtain the root infisical client ID/Secret for secret of secret pattern
 rootSecret:
   # -- Name of kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict)
-  name: doppler-secret
-  # -- Secret Key of the kubernetes secret generated of the proxy doppler token (main purpose is to de-conflict)
-  key: DOPPLER_TOKEN
-  # -- Reference from the secret of secrets vault for the proxy token (need to configure)
+  name: infisical-secret
+  # -- Secret Key of the kubernetes secret generated of the proxy infisical client ID/Secret (main purpose is to de-conflict)
+  key:
+    # -- Key of the infisical client ID
+    clientId: CLIENT_ID
+    # -- Key of the infisical client Secret
+    clientSecret: CLIENT_SECRET
+  # -- Reference from the secret of secrets vault for the proxy client ID/Secret (need to configure)
   ref:
+    # -- Reference in the secret of secrets vault for the proxy infisical client ID
+    clientId: ""
+    # -- Reference in the secret of secrets vault for the proxy infisical client Secret
+    clientSecret: ""
   # -- Store Configuration for the secret of secrets vault for the proxy token)
   store:
     # -- `ClusterSecretStore` or `SecretStore`. Defaults to `ClusterSecretStore`
     kind: ClusterSecretStore
     # -- Name of the secret store to be created to contain the proxy token
-    name: doppler
+    name: infisical
+
+infisicalHost: https://secrets.atomi.cloud

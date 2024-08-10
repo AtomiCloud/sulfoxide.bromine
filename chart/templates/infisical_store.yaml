@@ -11,9 +11,12 @@ spec:
   target:
     name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" .Values.rootSecret.name "root" .) }}
   data:
-    - secretKey: {{ .Values.rootSecret.key }}
+    - secretKey: {{ .Values.rootSecret.key.clientId }}
       remoteRef:
-        key: {{ .Values.rootSecret.ref }}
+        key: {{ .Values.rootSecret.ref.clientId}}
+    - secretKey: {{ .Values.rootSecret.key.clientSecret }}
+      remoteRef:
+        key: {{ .Values.rootSecret.ref.clientSecret}}
 ---
 apiVersion: external-secrets.io/v1beta1
 kind: SecretStore
@@ -23,9 +26,17 @@ metadata:
   annotations: {{- include "sulfoxide-bromine.annotations" . | nindent 4 }}
 spec:
   provider:
-    doppler:
+    infisical:
       auth:
-        secretRef:
-          dopplerToken:
+        universalAuthCredentials:
+          clientId:
+            key: {{ .Values.rootSecret.key.clientId}}
             name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" .Values.rootSecret.name "root" .) }}
-            key: {{ .Values.rootSecret.key }}
+          clientSecret:
+            key: {{ .Values.rootSecret.key.clientSecret}}
+            name: {{ template "sulfoxide-bromine.fullname-with-suffix" (dict "arg" .Values.rootSecret.name "root" .) }}
+      secretsScope:
+        projectSlug: {{ .Values.serviceTree.platform }}-{{ .Values.serviceTree.service}}
+        environmentSlug: {{ .Values.serviceTree.landscape}}
+        secretsPath: /
+      hostAPI: {{ .Values.infisicalHost }}

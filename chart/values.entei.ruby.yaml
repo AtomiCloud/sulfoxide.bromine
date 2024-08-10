@@ -1,8 +1,12 @@
 serviceTree:
   landscape: entei
   cluster: ruby
+  platform: sulfoxide
+  service: iodine
 
-storeName: doppler-iodine
+storeName: infisical-iodine
 
 rootSecret:
-  ref: SULFOXIDE_IODINE
+  ref:
+    clientId: SULFOXIDE_IODINE_CLIENT_ID
+    clientSecret: SULFOXIDE_IODINE_CLIENT_SECRET
