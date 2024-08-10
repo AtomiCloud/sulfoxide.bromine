@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.5.1...v1.6.0) (2024-08-10)
+
+
+### 📦 Upstreams Changes
+
+* **setup-nix:** action to 1.2.1 ([d99e3e4](https://github.com/AtomiCloud/sulfoxide.bromine/commit/d99e3e468aaf6c73db45d0557feef276043d971a))
+
 ## [1.5.1](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.5.0...v1.5.1) (2024-08-10)
 
 
