@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.6.0...v1.7.0) (2024-10-02)
+
+
+### 📦 Upstreams Changes
+
+* **atominix:** ugrading to 28.0.0 ([a92a37b](https://github.com/AtomiCloud/sulfoxide.bromine/commit/a92a37b38f86205ac6b091dd3aee1381309b8df3))
+
 ## [1.6.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.5.1...v1.6.0) (2024-08-10)
 
 
