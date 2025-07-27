@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.7.0...v1.8.0) (2025-07-27)
+
+
+### 🚀 New Features
+
+* upgrade to pin to v1 ([7f92b3f](https://github.com/AtomiCloud/sulfoxide.bromine/commit/7f92b3f39cc845e2dbce04e4fe3607eecf4552d3))
+
 ## [1.7.0](https://github.com/AtomiCloud/sulfoxide.bromine/compare/v1.6.0...v1.7.0) (2024-10-02)
 
 
